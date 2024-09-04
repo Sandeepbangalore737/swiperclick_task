@@ -1,9 +1,25 @@
-import React from 'react';
-import { Box, Card, CardContent, Typography } from '@mui/material';
+import React from "react";
+import {
+  Box,
+  Card,
+  CardContent,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 const CommonCard = ({ title, description, imageUrl }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
-    <Card sx={{ backgroundColor: "#0a0a0a", padding: 2, borderRadius: "16px" }}>
+    <Card
+      sx={{
+        backgroundColor: "#0a0a0a",
+        padding: isMobile ? 0 : 2,
+        borderRadius: "16px",
+      }}
+    >
       {imageUrl && (
         <Box
           sx={{
@@ -14,7 +30,7 @@ const CommonCard = ({ title, description, imageUrl }) => {
             width: "80px",
             height: "80px",
             mb: 2,
-            ml:2
+            ml: 2,
           }}
         >
           <Box
@@ -25,7 +41,7 @@ const CommonCard = ({ title, description, imageUrl }) => {
               width: "70%",
               height: "70%",
               borderRadius: "50%",
-              pl:3
+              pl: 3,
             }}
           />
         </Box>

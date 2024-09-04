@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Avatar, Box, Card, CardContent, Typography } from "@mui/material";
+import { Avatar, Box, Card, CardContent, Typography, useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 const CustomersCard = ({ imageUrl, title, description, avatarImage, name }) => {
-  
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <Card
       sx={{
@@ -13,8 +15,8 @@ const CustomersCard = ({ imageUrl, title, description, avatarImage, name }) => {
         alignItems: "left",
         height: "100%",
         border: "1px solid #232323",
-        px: 6,
-        pt: 6,
+        px: isMobile ? "16px" : 6,
+        pt: 3,
         pb: 3,        
         borderRadius: "16px",
         position: "relative",

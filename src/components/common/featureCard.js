@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Box, Card, CardContent, Typography, useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 const FeatureCard = ({ imageUrl, title, description }) => {
   const titleToImageWidth = {
@@ -9,6 +10,8 @@ const FeatureCard = ({ imageUrl, title, description }) => {
     "Task Management":"80%"
   };
   const imageWidth = titleToImageWidth[title] || "100%";
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Card
@@ -20,9 +23,9 @@ const FeatureCard = ({ imageUrl, title, description }) => {
         alignItems: "center",
         height: "100%",
         border: "1px solid #232323",
-        px: 6,
-        pt: 6,
-        pb: 3,
+        px: isMobile ? 3 : 6,
+        pt:  6,
+        pb: isMobile ? 1: 3,
         borderRadius: "16px",
         position: "relative",
         cursor: "pointer",

@@ -7,7 +7,7 @@ const CustomButton = ({
   onClick,
   children,
   sx = {},
-  buttonType = "default", // Add a prop to differentiate button styles
+  buttonType = "default",
   ...rest
 }) => {
   return (
@@ -20,7 +20,7 @@ const CustomButton = ({
         textTransform: "capitalize",
         backgroundColor: "#4F1AD6",
         borderRadius: "10px",
-        padding: ".65rem 1.25rem",
+        padding:  ".65rem 1.25rem",
         fontSize: buttonType === "navbar" ? "0.75rem" : "1rem",
         fontWeight: "600",
         "&:hover": {
