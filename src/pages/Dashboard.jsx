@@ -33,13 +33,13 @@ import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
+import brandLogo from "../assets/images/Logo_H_copy.png"
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
     right: -3,
     top: 10,
-    padding: "0 4px",
-    backgroundColor: "#4F1AD6",
+    backgroundColor: "#EF4261",
   },
 }));
 
@@ -100,11 +100,11 @@ function Dashboard() {
     setDrawerOpen(!drawerOpen);
   };
   return (
-    <Box sx={{ width: "100%", backgroundColor: "#0a0a0a" }}>
+    <Box sx={{ width: "100%", backgroundColor: "#121124" }}>
       <AppBar
         position="sticky"
         sx={{
-          px: isMobile ? "0" : "10%",
+          px: isMobile ? "0" : "9%",
           backdropFilter: "blur(20px)",
           background: "#04020a0d",
           boxShadow: "none",
@@ -124,10 +124,10 @@ function Dashboard() {
         >
           <IconButton edge="start" color="inherit" aria-label="menu">
             <img
-              src="https://cdn.prod.website-files.com/6697ec51a8dd714b4a97b818/66a1f5ae909078fec389b21f_Logo.svg"
+              src={brandLogo}
               loading="lazy"
               alt="Logo"
-              style={{ height: "40px" }}
+              width="164px"
             />
           </IconButton>
 
@@ -233,7 +233,7 @@ function Dashboard() {
             flexDirection: "column",
             alignItems: "center",
             textAlign: "center",
-            backgroundColor: "#0a0a0a",
+            backgroundColor: "#121124",
           }}
         >
           <Box
@@ -284,7 +284,7 @@ function Dashboard() {
             flexDirection: "column",
             alignItems: "center",
             textAlign: "center",
-            backgroundColor: "#0a0a0a",
+            backgroundColor: "#121124",
             backgroundImage:
               "url('https://cdn.prod.website-files.com/6697ec51a8dd714b4a97b818/66a1fd095dd6b744e70dc20b_Bg%20Img.avif')",
             backgroundSize: "cover",
@@ -692,7 +692,7 @@ function Dashboard() {
         <Grid item xs={12} sm={6} md={6}>
           <Card
             sx={{
-              backgroundColor: "#0a0a0a",
+              backgroundColor: "#121124",
               padding: isMobile ? 0 : 2,
               pt: isMobile ? 0 : 6,
               borderRadius: "16px",
@@ -753,7 +753,7 @@ function Dashboard() {
         <Grid item xs={12} sm={6} md={6}>
           <Card
             sx={{
-              backgroundColor: "#0a0a0a",
+              backgroundColor: "#121124",
               px: isMobile ? 3 : 6,
               pt: 6,
               pb: 6,
@@ -782,7 +782,7 @@ function Dashboard() {
         <Grid item xs={12} sm={6} md={6}>
           <Card
             sx={{
-              backgroundColor: "#0a0a0a",
+              backgroundColor: "#121124",
               px: isMobile ? 3 : 6,
               pt: 6,
               pb: 6,
@@ -804,7 +804,7 @@ function Dashboard() {
         <Grid item xs={12} sm={6} md={6}>
           <Card
             sx={{
-              backgroundColor: "#0a0a0a",
+              backgroundColor: "#121124",
               pt: 6,
               borderRadius: "16px",
             }}
@@ -906,7 +906,7 @@ function Dashboard() {
         <Grid item xs={12} sm={6} md={4}>
           <Card
             sx={{
-              backgroundColor: "#0a0a0a",
+              backgroundColor: "#121124",
               cursor: "pointer",
               borderRadius: "10px",
               overflow: "hidden",
@@ -957,7 +957,7 @@ function Dashboard() {
         <Grid item xs={12} sm={6} md={4}>
           <Card
             sx={{
-              backgroundColor: "#0a0a0a",
+              backgroundColor: "#121124",
               cursor: "pointer",
               borderRadius: "10px",
               overflow: "hidden",
@@ -1008,7 +1008,7 @@ function Dashboard() {
         <Grid item xs={12} sm={6} md={4}>
           <Card
             sx={{
-              backgroundColor: "#0a0a0a",
+              backgroundColor: "#121124",
               cursor: "pointer",
               borderRadius: "10px",
               overflow: "hidden",
@@ -1160,7 +1160,7 @@ function Dashboard() {
       </Box>
       <Box
         sx={{
-          backgroundColor: "#0a0a0a",
+          backgroundColor: "#121124",
           backgroundImage:
             "url('https://cdn.prod.website-files.com/6697ec51a8dd714b4a97b818/66a1fd095dd6b744e70dc20b_Bg%20Img.avif')",
           backgroundSize: "cover",
@@ -1176,7 +1176,7 @@ function Dashboard() {
             flexDirection: "column",
             alignItems: "center",
             textAlign: "center",
-            backgroundColor: "#0a0a0a",
+            backgroundColor: "#121124",
             backgroundImage:
               "url('https://cdn.prod.website-files.com/6697ec51a8dd714b4a97b818/66a1fd095dd6b744e70dc20b_Bg%20Img.avif')",
             backgroundSize: "cover",
@@ -1184,8 +1184,9 @@ function Dashboard() {
           }}
         >
           <img
-            src="https://cdn.prod.website-files.com/6697ec51a8dd714b4a97b818/66a1f5ae909078fec389b21f_Logo.svg"
+            src={brandLogo}
             alt=""
+            width="20%"
           />
           <Typography
             variant="h2"

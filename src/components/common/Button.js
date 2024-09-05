@@ -18,14 +18,14 @@ const CustomButton = ({
       color="primary"
       sx={{
         textTransform: "capitalize",
-        backgroundColor: "#4F1AD6",
+        backgroundColor: "#EF4261",
         borderRadius: "10px",
         padding:  ".65rem 1.25rem",
         fontSize: buttonType === "navbar" ? "0.75rem" : "1rem",
         fontWeight: "600",
         "&:hover": {
           color: "#ffffff",
-          backgroundColor: "#4f1ad6", 
+          backgroundColor: "#EF4261", 
           boxShadow: "0 0 0 2px #340f92",
         },
         ...sx,
