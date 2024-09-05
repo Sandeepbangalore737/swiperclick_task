@@ -26,7 +26,7 @@ const CustomButton = ({
         "&:hover": {
           color: "#ffffff",
           backgroundColor: "#EF4261", 
-          boxShadow: "0 0 0 2px #340f92",
+          boxShadow: "0 0 0 2px #F5888B"
         },
         ...sx,
       }}
