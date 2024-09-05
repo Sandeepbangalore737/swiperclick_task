@@ -1186,7 +1186,7 @@ function Dashboard() {
           <img
             src={brandLogo}
             alt=""
-            width="20%"
+            width="164px"
           />
           <Typography
             variant="h2"
