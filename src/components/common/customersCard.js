@@ -14,7 +14,7 @@ const CustomersCard = ({ imageUrl, title, description, avatarImage, name }) => {
         flexDirection: "column",
         alignItems: "left",
         height: "100%",
-        border: "1px solid #F5888B",
+        border: "1px solid #232323",
         px: isMobile ? "16px" : 6,
         pt: 3,
         pb: 3,        
