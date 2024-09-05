@@ -34,7 +34,7 @@ const FeatureCard = ({ imageUrl, title, description }) => {
             "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
           backgroundImage:
             "url('https://cdn.prod.website-files.com/6697ec51a8dd714b4a97b818/66b47c9b6f640ddbab256bc4_Blur%20Effect.avif')",
-          border: "1px solid #4f1ad6",
+          border: "1px solid #F5888B",
         },
       }}
     >

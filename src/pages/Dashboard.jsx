@@ -421,7 +421,7 @@ function Dashboard() {
           in one platform
         </Typography>
       </Box>
-      <Grid container sx={{ px: isMobile ? "8px" : "10%" }} mt="2%">
+      <Grid container sx={{ px: isMobile ? "5%" : "10%" }} spacing={2} mt="2%">
         <Grid item xs={12} sm={6} md={3}>
           <ScrollAnimation animateIn="fadeInUp" duration={1.2}>
             <CommonCard
@@ -431,7 +431,7 @@ function Dashboard() {
             />
           </ScrollAnimation>
         </Grid>
-        <Grid itemxs={12} sm={6} md={3}>
+        <Grid item xs={12} sm={6} md={3}>
           <ScrollAnimation animateIn="fadeInUp" duration={1.2}>
             <CommonCard
               title="Advanced Analytics"
@@ -440,7 +440,7 @@ function Dashboard() {
             />
           </ScrollAnimation>
         </Grid>
-        <Grid itemxs={12} sm={6} md={3}>
+        <Grid item xs={12} sm={6} md={3}>
           <ScrollAnimation animateIn="fadeInUp" duration={1.2}>
             <CommonCard
               title="Communication Tools"
